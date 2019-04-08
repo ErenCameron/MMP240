@@ -1,0 +1,13 @@
+.featured-img img{
+display:block;
+width: 100%;
+height: auto;
+}
+.featured-img{
+	margin: 1em 0;
+}
+.image-caption{
+	font-size: 80%;
+	padding: .7em 1em;
+	background: hsl(0,0%,85%);
+}
