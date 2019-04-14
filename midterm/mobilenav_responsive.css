@@ -4,15 +4,16 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 */
 
 .topnav {
+  display: grid;
   overflow: hidden;
-  background-color: #383F51;
+  background-image: linear-gradient(#591ec8,#fa462f);
 
 }
 
 .topnav a {
   float: left;
-  display: block;
-  color: #f2f2f2;
+  display: grid;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -20,7 +21,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 }
 
 .topnav a:hover {
-  background-color: #FFD166;
+  background-color: #7BDFF2;
   color: black;
 }
 
@@ -36,8 +37,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
-    display: block;
+    display: grid;
   }
 
   .topnav.responsive {position: relative;}
@@ -51,7 +51,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
   }
     
   .topnav a.icon{
-    display: block;
+    display: grid;
     height: auto;
     width: auto;
     /*If navigation button is off, fix padding here after styling text*/
@@ -59,7 +59,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
     }
   .topnav.responsive a {
     float: none;
-    display: block;
+    display: grid;
     text-align: left;
   }
 }

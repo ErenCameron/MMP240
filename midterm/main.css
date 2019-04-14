@@ -1,5 +1,130 @@
+.site{
+	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+			"topnav"
+			"title"
+			"main"
+			"luckyme"
+			"end"
+			"montreal";
+}
+.featured-img img{
+	display:block;
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	padding-right: 20px;
+}
+.montreal img{
+	display:block;
+	width: 100%;
+	height: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+img{
+	display:block;
+	width: 100%;
+	height: auto;
+	padding-left: 20px;
+}
+.luckyme img{
+	display:block;
+	width: 100%;
+	height: auto;
+	max-width: 700px;
+	padding-right: 20px;
+}
+p{
+	font-family: 'Raleway', sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	margin-right: 20px;
+}
+h1{
+	color: white;
+	font-family: 'Racing Sans One', cursive;
+	font-size: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h2{
+	color: white;
+	font-family: 'Racing Sans One', cursive;
+	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h3{
+	color: white;
+	font-family: 'Racing Sans One', cursive;
+	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h4{
+	color: white;
+	font-family: 'Racing Sans One', cursive;
+	font-size: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h5{
+	color: white;
+	font-family: 'Racing Sans One', cursive;
+	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h6{
+	color: white;
+	font-family: 'Racing Sans One', cursive;
+	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
+.title{
+	grid-area: title;
+}
+.main{
+	grid-area: main;
+}
+.end{
+	grid-area: end;
+}
+.luckyme{
+	grid-area: luckyme;
+}
+@media only screen and (min-width: 900px){
+	.topnav{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"topnav"
+	}
+}
+@media only screen and (min-width: 1000px){
+	.topnav{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 
+}
+@media only screen and (min-width: 1000px){
+	.content{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas: 
+			"title main"
+			"title luckyme"
+			"end end";
+	}
+
+}
 
 
 
