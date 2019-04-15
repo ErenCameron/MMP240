@@ -16,6 +16,7 @@
 	height: auto;
 	max-width: 500px;
 	padding-right: 20px;
+	margin-left: -20px;
 }
 .montreal img{
 	display:block;
