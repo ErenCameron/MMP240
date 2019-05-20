@@ -5,7 +5,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 
 .topnav {
   overflow: hidden;
-  background-color: #383F51;
+  background-color: #990000;
 
 }
 
@@ -21,12 +21,12 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 }
 
 .topnav a:hover {
-  background-color: #FFD166;
+  background-color: white;
   color: black;
 }
 
 .active {
-  background-color: #7BDFF2;
+  background-color: #3F0D12;
   color: white;
 }
 
@@ -35,6 +35,22 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 }
 
 @media screen and (max-width: 600px) {
+.title1{
+  display: none;
+  grid-column: col-start 1 / span 12;
+  grid-row: col-start 2 / span 2;
+}
+.title2{
+  display: none;
+  grid-column: col-start  / span 12;
+  grid-row: col-start 5 / span 2;
+ }
+.title3{
+  display: none;
+  grid-column: col-start  / span 12;
+  grid-row: col-start 9 / span 2;
+}
+
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -47,7 +63,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
     right: 0;
     top: 0;
     /*If navigation button is off, fix padding here after styling text*/
-    padding: 17.25px 17px;
+    padding: 13.25px 18px;
     
   }
     
@@ -56,11 +72,12 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
     height: auto;
     width: auto;
     /*If navigation button is off, fix padding here after styling text*/
-     padding: 17.25px 17px;
-    }
+     padding: 13.25px 18px;
+  }
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+
 }

@@ -1,0 +1,105 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+}
+.header {
+  grid-column: col-start / span 12;
+  grid-row: col-start 2 / span 6;
+}
+.gallery{
+	display: grid;
+	grid-column: col-start / span 12;
+	grid-row: col-start 8 / span 6;
+	grid-gap: 5px;
+}
+img {
+  width: 100%;
+  display: block; 
+  object-fit: cover;
+}
+@media screen and (max-width: 900px){
+.gallery_1{
+    grid-column: col-start / span 12;
+	grid-row: col-start  / span 6;
+ }
+.gallery_2{
+    grid-column: col-start / span 12;
+	grid-row: col-start 4 / span 6;
+ }
+.gallery_3{
+   grid-column: col-start  / span 12;
+	grid-row: col-start 7 / span 6;
+ }
+.title1{
+	display: none;
+	grid-column: col-start 1 / span 12;
+	grid-row: col-start 2 / span 2;
+}
+.title2{
+	display: none;
+	grid-column: col-start  / span 12;
+	grid-row: col-start 5 / span 2;
+ }
+.title3{
+	display: none;
+	grid-column: col-start  / span 12;
+	grid-row: col-start 9 / span 2;
+}
+}
+@media screen and (min-width:1000px){
+.gallery_1{
+    grid-column: col-start / span 3;
+	grid-row: col-start 1 / span 6;
+ }
+.gallery_2{
+    grid-column: col-start / span 3;
+	grid-row: col-start 4 / span 2;
+ }
+.gallery_3{
+   grid-column: col-start 10 / span 3;
+	grid-row: col-start 1 / span 5;
+ }
+ .gallery_4{
+ 	width: 400px;
+ 	
+    grid-column: col-start  / span 1;
+	grid-row: col-start 1 / span 2;
+ }
+.gallery_5{
+	width: 400px;
+	
+    grid-column: col-start  / span 1;
+	grid-row: col-start 3 / span 1;
+ }
+.gallery_6{
+	width: 400px;
+
+    grid-column: col-start  / span 1;
+	grid-row: col-start 5 / span 2;
+ }
+.title1{
+	 line-height: 60px;
+	display: block;
+	grid-column: col-start 2 / span 1;
+	grid-row: col-start 1 / span 2;
+}
+.title2{
+	    line-height: 60px;
+
+	grid-column: col-start 2 / span 1;
+	grid-row: col-start 3 / span 2;
+ }
+.title3{
+	    line-height: 60px;
+
+	grid-column: col-start 2 / span 1;
+	grid-row: col-start 5 / span 2;
+}
+a:link{
+	text-decoration: underline;
+	color:#990000;
+
+}
+}
+
