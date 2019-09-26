@@ -6,7 +6,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 .topnav {
   display: grid;
   overflow: hidden;
-  background-image: linear-gradient(#591ec8,#fa462f);
+  background-image: linear-gradient(0.95turn,#591ec8,#fa462f);
 
 }
 
